@@ -37,7 +37,7 @@ df=pd.read_csv('/content/Encoding Data.csv')
 df
 ```
 ![1](https://github.com/chgeethika/EXNO-3-DS/assets/142209368/9ba44dd5-4788-42e1-9535-466f9e61328d)
-#OrdinalEncoder
+##OrdinalEncoder
 ```
 from sklearn.preprocessing import LabelEncoder,OrdinalEncoder
 pm=['Hot','Warm','Cold']
@@ -50,7 +50,7 @@ df['bo2']=e1.fit_transform(df[["ord_2"]])
 df
 ```
 ![3](https://github.com/chgeethika/EXNO-3-DS/assets/142209368/11717fbf-5df6-4e58-ae7a-0a911cd7b8d9)
-#LabelEncoder
+##LabelEncoder
 ```
 le=LabelEncoder()
 dfc=df.copy()
@@ -58,7 +58,7 @@ dfc['ord_2']=le.fit_transform(df[["ord_2"]])
 dfc
 ```
 ![4](https://github.com/chgeethika/EXNO-3-DS/assets/142209368/08bfaf7f-0334-4c7f-8c36-1f9e1bc2ef91)
-#OneHotEncoder
+##OneHotEncoder
 ```
 from sklearn.preprocessing import OneHotEncoder
 ohe=OneHotEncoder(sparse=False)
@@ -73,7 +73,7 @@ pd.get_dummies(df2,columns=["nom_0"])
 ```
 ![6](https://github.com/chgeethika/EXNO-3-DS/assets/142209368/a84369ac-98ba-4018-9cb0-06381bd69796)
 ```
-#Binary Encoder
+##Binary Encoder
 pip install --upgrade category_encoders
 ```
 ![7](https://github.com/chgeethika/EXNO-3-DS/assets/142209368/d928a16f-05a5-4c2b-b62c-be60b164f1d1)
@@ -90,7 +90,7 @@ dfb=pd.concat([df,nd],axis=1)
 dfb
 ```
 ![9](https://github.com/chgeethika/EXNO-3-DS/assets/142209368/2f25e266-1fa8-4596-8a48-9604e0058a5a)
-#Target Encoder
+##Target Encoder
 ```
 from category_encoders import TargetEncoder
 te=TargetEncoder()
@@ -100,7 +100,7 @@ cc=pd.concat([cc,new],axis=1)
 cc
 ```
 ![10](https://github.com/chgeethika/EXNO-3-DS/assets/142209368/f0961ea6-d2d3-4ca5-9736-48adca400346)
-#Data Transformation
+##Data Transformation
 ```
 import pandas as pd
 import numpy as np
