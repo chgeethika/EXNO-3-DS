@@ -72,8 +72,8 @@ df2
 pd.get_dummies(df2,columns=["nom_0"])
 ```
 ![6](https://github.com/chgeethika/EXNO-3-DS/assets/142209368/a84369ac-98ba-4018-9cb0-06381bd69796)
+# BinaryEncoder
 ```
-# Binary Encoder
 pip install --upgrade category_encoders
 ```
 ![7](https://github.com/chgeethika/EXNO-3-DS/assets/142209368/d928a16f-05a5-4c2b-b62c-be60b164f1d1)
